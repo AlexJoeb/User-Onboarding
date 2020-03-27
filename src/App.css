@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+form, label {
+    display:flex;
+    flex-direction: column;
+}
+
+input, button{
+    width: 300px;
+    height: 25px;
+    text-indent: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    border-bottom:3px solid black;
+    border-left:3px solid black;
+}
+
+input:active, input:focus{
+    outline:none;
+    border: 2px solid blue;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+input[type='checkbox']::after{
+    content: "Yes, I agree.";
+    height: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    font-size: .8rem;
+}
+
+.error {
+    font-size: .8rem;
+    color:red;
+    margin-top: 10px;
+}
+
+/* - */
+
+.userlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.userlist li {
+    flex-basis: 32%;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    border-bottom:3px solid black;
+    border-left:3px solid black;
+
+    margin-bottom: 20px;
+}
